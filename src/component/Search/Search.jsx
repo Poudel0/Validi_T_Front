@@ -1,7 +1,7 @@
 import React from "react";
 import "./Search.css";
 const Search = () => {
-  return <div></div>;
+  return <div>Search</div>;
 };
-import "./Search.css";
+// import "./Search.css";
 export default Search;

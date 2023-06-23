@@ -2,7 +2,7 @@ import React from "react";
 import "./Education.css";
 
 const Education = () => {
-  return <div></div>;
+  return <div>Education</div>;
 };
 
 export default Education;
