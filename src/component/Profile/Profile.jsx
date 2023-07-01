@@ -6,20 +6,20 @@ import Work from "./Work/Work.jsx";
 
 const Profile = () => {
   const [profileDetails, setProfileDetails] = useState("");
-  const [work, setWork] = useState([]);
-  const [education, setEdiucation] = useState([]);
-  const [experience, setExperience] = useState([]);
+  const [workData, setWorkData] = useState([]);
+  const [educationData, setEdiucation] = useState([]);
+  const [experienceData, setExperience] = useState([]);
 
   const updateProfileDetails = (details) => {
     setProfileDetails(details);
   };
-  const updateWorkDetails = (data) => {
+  const updateWorkData = (data) => {
     setProfileDetails(data);
   };
-  const updateEducationDetails = (data) => {
+  const updateEducationData = (data) => {
     setProfileDetails(data);
   };
-  const updateExperienceDetails = (data) => {
+  const updateExperienceData = (data) => {
     setProfileDetails(data);
   };
 
@@ -36,32 +36,40 @@ const Profile = () => {
         </div>
       </div>
       <div className="Card">
-        <div className="Card_Header">Work History</div>
+        <div className="Card_Header">Work</div>
         <div className="Card_Body">
-          <input
-            type="text"
-            value={profileDetails}
-            onChange={(e) => updateProfileDetails(e.target.value)}
-          />
+          {workData.map((work, index) => (
+            <div key={index}>{work}</div>
+          ))}
+          <button
+            onClick={() => updateWorkData(["Work 1", "Work 2", "Work 3"])}
+          >
+            Load Work Data
+          </button>
         </div>
       </div>
       <div className="Card">
-        <div className="Card_Header">Education History</div>
+        <div className="Card_Header">Experience</div>
         <div className="Card_Body">
-          <input
-            type="text"
-            value={profileDetails}
-            onChange={(e) => updateProfileDetails(e.target.value)}
-          />
+          {experienceData.map((exp, index) => (
+            <div key={index}>{exp}</div>
+          ))}
+          <button
+            onClick={() =>
+              updateExperienceData(["Experience 1", "Experience 2"])
+            }
+          >
+            Load Experience Data
+          </button>
         </div>
       </div>
       <div className="Card">
-        <div className="Card_Header">Experience History</div>
+        <div className="Card_Header">Education</div>
         <div className="Card_Body">
           <input
             type="text"
             value={profileDetails}
-            onChange={(e) => updateProfileDetails(e.target.value)}
+            onChange={(e) => updateExperienceData(e.target.value)}
           />
         </div>
       </div>
