@@ -1,18 +1,27 @@
 .Search_Wrapper {
   background: rgba(0, 0, 0, 0.3);
   width: 40vw;
-  display: block;
   padding: 0.7rem 1.7rem;
   z-index: 1;
   position: sticky;
-  left: 50%;
-  transform: translate(-50%);
-  top: 15rem;
-  display: flex;
+  top: 10rem;
   gap: 0.8rem;
   border-radius: 3rem;
   backdrop-filter: blur(10px);
+  /* display: block; */
+  /* left: 50%; */
+  /* transform: translate(-50%); */
+  /* align-items: center; */
 }
+
+.search-main{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+
 .Search_Wrapper a {
   background: transparent;
   padding: 0.2rem;
@@ -36,6 +45,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 0.1rem 0.4rem;
+  margin-bottom: -40rem;
 }
 
 .Search_Bar input[type="text"] {
@@ -54,3 +64,4 @@
   margin-left: 0.5rem;
   font-size: 1.2rem;
 }
+

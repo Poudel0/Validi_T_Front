@@ -1,3 +1,61 @@
+.profile-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: rgba(77, 181, 255, 0.4);
+  padding: 2.5rem;
+  margin: 3rem;
+  flex-direction: column;
+  width: 90% ;
+}
+
+#banner{
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-photo{
+  position: relative;
+  left: -40%;
+  color: red;
+  background-color: aliceblue;
+  height: 10rem;
+  width: 10rem;
+  top: -15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#profile-info{
+  position: relative;
+  left: -22%;
+  height: 10rem;
+  width: 50%;
+  top: -22rem;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  background-color: transparent;
+}
+
+#profile-name{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+
+
+
+
 /* .Profile_base {
   width: max-content;
   display: block;
@@ -13,7 +71,7 @@
   backdrop-filter: blur(10px);
 } */
 
-#Profile {
+/* #Profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,4 +102,4 @@
 }
 .Card_Body {
   font-size: 16px;
-}
+} */
